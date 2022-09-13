@@ -10,6 +10,8 @@
     <categories>apparel,t-shirt,new-arrival,swag</categories>
     <inventory_quantity>25</inventory_quantity>
     <inventory_policy>1</inventory_policy>
+    <duplicate_property>Some value</duplicate_property>
+    <duplicate_property>Other value</duplicate_property>
   </Product>
   <Product>
     <id>KLAVIYO-TSHIRT2</id>
