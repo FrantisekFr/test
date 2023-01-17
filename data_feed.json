@@ -1,6 +1,6 @@
 {
   "items":[
-  "deeper_pro": {
+    {"deeper_pro": {
   "ENG": {
       "title": "Deeper Sonar PRO+ 2",
       "description": "Improved and better than ever now with 3 beam frequencies, more crisp and clear visuals, increased GPS performance, longer lasting battery up to 9 hours (depending on usage), and scanning depth up to 100 m."
@@ -9,8 +9,8 @@
       "title": "Tieferes Sonar PRO+ 2",
       "description": "Verbessert und besser als je zuvor mit 3 Strahlfrequenzen, schärferen und klareren Bildern, erhöhter GPS-Leistung, längerer Akkulaufzeit von bis zu 9 Stunden (je nach Nutzung) und einer Scantiefe von bis zu 100 m."
     }
-  },
-  "trophy_bundle": {
+  }},
+    {"trophy_bundle": {
     "ENG": {
       "title": "Limited Stock Deeper Trophy Bundle",
       "description": "Powerful bundle for anglers who want to reel in their next big trophy. Deeper CHIRP+ 2 wireless castable sonar with free gifts: multifunctional Deeper Power Lantern and durable Deeper Smartphone Mount. Easily find ideal fishing spots, light any terrain or tent and charge your devices, and keep your phone safe and secure on any fishing rod."
@@ -19,6 +19,6 @@
       "title": "Begrenzter Vorrat Deeper Trophy Bundle",
       "description": "Leistungsstarkes Bundle für Angler, die ihre nächste große Trophäe einholen wollen. Deeper CHIRP+ 2 kabelloses auswerfbares Sonar mit kostenlosen Geschenken: multifunktionale Deeper Power Lantern und langlebige Deeper Smartphone-Halterung. Finden Sie einfach ideale Angelplätze, beleuchten Sie jedes Gelände oder Zelt und laden Sie Ihre Geräte auf und halten Sie Ihr Telefon sicher und sicher an jeder Angelrute."
     }
-  }
+  }}
 ]
 }
