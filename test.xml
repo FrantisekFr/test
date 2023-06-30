@@ -3,9 +3,15 @@
   <Product>
     <id>KLAVIYO-TSHIRT_1</id>
     <title>Classic Klaviyo T-Shirt 1</title>
+    <title_eng>Classic Klaviyo T-Shirt 1</title_eng>
+    <title_de>Ein Title (DE) - Classic Klaviyo T-Shirt 1</title_de>
     <link>https://klaviyogear.myshopify.com/collections/klaviyo-classics/products/short-sleeve-t-shirt-1</link>
     <description>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description>
+    <description_eng>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_eng>
+    <description_de>Eine Beschreibung (DE) - Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_de>
     <price>10</price>
+    <price_gbp>10</price_gbp>
+    <price_eur>12</price_eur>
     <compare_at_price>5</compare_at_price>
     <image_link>https://www.klaviyo.com/media/images/examples/products/klaviyo-tshirt-thumbnail.png</image_link>
     <categories>apparel,t-shirt,new-arrival,swag</categories>
@@ -15,9 +21,15 @@
   <Product>
     <id>KLAVIYO-TSHIRT_2</id>
     <title>Classic Klaviyo T-Shirt 2</title>
+    <title_eng>Classic Klaviyo T-Shirt 2</title_eng>
+    <title_de>Ein Title (DE) - Classic Klaviyo T-Shirt 2</title_de>
     <link>https://klaviyogear.myshopify.com/collections/klaviyo-classics/products/short-sleeve-t-shirt-1</link>
     <description>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description>
+    <description_eng>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_eng>
+    <description_de>Eine Beschreibung (DE) - Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_de>
     <price>10</price>
+    <price_gbp>10</price_gbp>
+    <price_eur>12</price_eur>
     <compare_at_price>10</compare_at_price>
     <image_link>https://www.klaviyo.com/media/images/examples/products/klaviyo-tshirt-thumbnail.png</image_link>
     <categories>apparel,t-shirt,new-arrival,swag</categories>
