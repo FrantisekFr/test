@@ -25,7 +25,7 @@
     function handleDataLayerPush(event) {
         console.log('dataLayer event received:', event);
         _learnq.push(['track', event.event, {
-          "payload":event.ecommerce.items
+          "payload":event
         }]);
     }
 
