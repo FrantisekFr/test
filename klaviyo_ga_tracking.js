@@ -20,6 +20,7 @@
 
 
 (function() {
+    console.log('triggered');
     // Define the function to handle dataLayer push events
     function handleDataLayerPush(event) {
         console.log('dataLayer event received:', event);
