@@ -1,4 +1,4 @@
-!function(){function handleDataLayerPush(event){  
+function handleDataLayerPush(event){  
    console.log(event);
    _learnq.push(['track', event.event, {
     "payload":event.ecommerce.items
@@ -16,4 +16,4 @@ function initializeDataLayerListener() {
     }    
 }
 
-initializeDataLayerListener()}
+initializeDataLayerListener()
