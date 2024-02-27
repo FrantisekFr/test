@@ -16,6 +16,10 @@
             eventName = event.event;
             ecommerceEvent = event.ecommerce;
         }
+
+        catch {
+            
+        }
         
         // Track standard events as relevant for Klaviyo assuming standard GA event formatting        
         if(ecommerceEvent){
@@ -62,8 +66,9 @@
                     // Track other ecommerce events as they stand i.e. without formatting the payload
                     klaviyo.track(eventName, ecommerce_data);
             }
-        } else if (eventName && !ecommerceEvent) {
-            //Track non-ecommerce events without payload formatting
+        } 
+        //Track non-ecommerce events without payload formatting
+        else if (eventName && !ecommerceEvent) {            
             klaviyo.track(eventName, event);
         }
     }
