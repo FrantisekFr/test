@@ -28,7 +28,7 @@
 
         console.log(eventName);
         console.log(ecommerceEvent);
-        console.log(ecommerce_items);
+        console.log(ecommerceItems);
         
         // Track standard events as relevant for Klaviyo assuming standard GA event formatting        
         if(ecommerceEvent){
