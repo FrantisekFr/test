@@ -6,20 +6,10 @@
         console.log('dataLayer event detected by handler:', event);
         
         var klaviyo = window.klaviyo || [];
-        var ecommerce_items;
-        var eventName;
-        var ecommerceEvent;
-        
-        // Validate supported event type and formatting
-        try {
-            ecommerce_items = event.ecommerce.items;
-            eventName = event.event;
-            ecommerceEvent = event.ecommerce;
-        }
-
-        catch(err) {
-            
-        }
+        // Validate supported event type and formatting        
+        var eventName = event.event || null;
+        var ecommerceEvent event.ecommerce || null      
+        var ecommerce_items = event.ecommerce.items || null;
         
         // Track standard events as relevant for Klaviyo assuming standard GA event formatting        
         if(ecommerceEvent){
