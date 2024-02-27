@@ -11,17 +11,17 @@
         var ecommerceEvent;
         var ecommerceItems;
         
-        try (event.event){
+        try {
             eventName = event.event;
         } catch (err) {        
         }
 
-        try (event.ecommerce){
+        try {
             eventName = event.event;
         } catch (err) {        
         }
 
-        try (event.ecommerce.items){
+        try {
             ecommerceItems = event.ecommerce.items;
         } catch (err) {        
         }
