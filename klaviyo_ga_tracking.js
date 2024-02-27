@@ -17,7 +17,7 @@
             ecommerceEvent = event.ecommerce;
         }
 
-        catch {
+        catch(err) {
             
         }
         
