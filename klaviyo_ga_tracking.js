@@ -17,7 +17,7 @@
         }
 
         try {
-            eventName = event.event;
+            ecommerceEvent = event.ecommerce;
         } catch (err) {        
         }
 
