@@ -4,28 +4,34 @@
     // Handle dataLayer events
     function handleDataLayerPush(event) {
         console.log('dataLayer event detected by handler:', event);
-
-        // The event attribute really should be present in the data but strictly speaking may not be enforced as mandatory by the GA API. 
-        var eventName = event.event;
-
-        // Track standard events as relevant for Klaviyo assuming standard GA format
-        if (eventName) {
-            var ecommerceData = event.ecommerce;
-            var ecommerce_items = event.ecommerce.items;
-
-            // Is an ecommerce event
-            switch (eventName && ecommerceData) {
+        
+        var klaviyo = window.klaviyo || [];
+        var ecommerce_items;
+        var eventName;
+        var ecommerceEvent;
+        
+        // Validate supported event type and formatting
+        try {
+            ecommerce_items = event.ecommerce.items;
+            eventName = event.event;
+            ecommerceEvent = event.ecommerce;
+        }
+        
+        // Track standard events as relevant for Klaviyo assuming standard GA event formatting        
+        if(ecommerceEvent){
+            
+            switch (eventName && ecommerceEvent && ecommerceItems) {                    
+            
                 case 'view_item':
-                    ecommerce_items[0].$value = ecommerce_items[0].price;
-                    var klaviyo = window.klaviyo || [];
+                    ecommerce_items[0].$value = ecommerce_items[0].price;                    
                     klaviyo.track("Viewed Product", ecommerce_items[0]);
                     break;
+                
                 case 'add_to_cart':
-                    ecommerce_items[0].$value = ecommerce_items[0].price;
-                    var klaviyo = window.klaviyo || [];
+                    ecommerce_items[0].$value = ecommerce_items[0].price;                    
                     klaviyo.track("Added to Cart", ecommerce_items);
-
                     break;
+                
                 case 'begin_checkout':
                     var checkoutValue = 0;
                     var checkoutData = {};
@@ -35,10 +41,10 @@
                     };
                     checkoutData.$value = parseFloat(checkoutValue.toFixed(2));
                     checkoutData.Items = ecommerce_items;
-
-                    var klaviyo = window.klaviyo || [];
+                    
                     klaviyo.track("Started Checkout", checkoutData);
                     break;
+                    
                 case 'purchase':
                     var purchaseValue = 0;
                     var purchaseData = {};
@@ -48,8 +54,7 @@
                     };
                     purchaseData.$value = parseFloat(purchaseValue.toFixed(2));
                     purchaseData.Items = ecommerce_items;
-
-                    var klaviyo = window.klaviyo || [];
+                    
                     klaviyo.track("Placed Order", purchaseData);
                     break;
 
@@ -57,6 +62,9 @@
                     // Track other ecommerce events as they stand i.e. without formatting the payload
                     klaviyo.track(eventName, ecommerce_data);
             }
+        } else if (eventName && !ecommerceEvent) {
+            //Track non-ecommerce events without payload formatting
+            klaviyo.track(eventName, event);
         }
     }
 
