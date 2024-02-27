@@ -7,9 +7,24 @@
         
         var klaviyo = window.klaviyo || [];
         // Validate supported event type and formatting        
-        var eventName = event.event || '';
-        var ecommerceEvent = event.ecommerce || '';      
-        var ecommerce_items = event.ecommerce.items || '';
+        var eventName;
+        var ecommerceEvent;
+        var ecommerce_items;
+        
+        try (event.event){
+            var eventName = event.event;
+        } catch (err) {        
+        }
+
+        try (event.ecommerce){
+            var eventName = event.event;
+        } catch (err) {        
+        }
+
+        try (event.ecommerce.items){
+            var ecommerce_items = event.ecommerce.items;
+        } catch (err) {        
+        }
 
         console.log(eventName);
         console.log(ecommerceEvent);
