@@ -8,7 +8,7 @@
         var klaviyo = window.klaviyo || [];
         // Validate supported event type and formatting        
         var eventName = event.event || null;
-        var ecommerceEvent event.ecommerce || null      
+        var ecommerceEvent = event.ecommerce || null;      
         var ecommerce_items = event.ecommerce.items || null;
 
         console.log(eventName);
