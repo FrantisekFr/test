@@ -9,20 +9,20 @@
         // Validate supported event type and formatting        
         var eventName;
         var ecommerceEvent;
-        var ecommerce_items;
+        var ecommerceItems;
         
         try (event.event){
-            var eventName = event.event;
+            eventName = event.event;
         } catch (err) {        
         }
 
         try (event.ecommerce){
-            var eventName = event.event;
+            eventName = event.event;
         } catch (err) {        
         }
 
         try (event.ecommerce.items){
-            var ecommerce_items = event.ecommerce.items;
+            ecommerceItems = event.ecommerce.items;
         } catch (err) {        
         }
 
