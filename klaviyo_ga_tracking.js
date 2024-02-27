@@ -13,7 +13,8 @@
             var ecommerceData = event.ecommerce;
             var ecommerce_items = event.ecommerce.items;
 
-            switch (eventName) {
+            // Is an ecommerce event
+            switch (eventName && ecommerceData) {
                 case 'view_item':
                     ecommerce_items[0].$value = ecommerce_items[0].price;
                     var klaviyo = window.klaviyo || [];
