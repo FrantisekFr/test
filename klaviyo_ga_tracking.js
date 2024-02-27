@@ -10,6 +10,10 @@
         var eventName = event.event || null;
         var ecommerceEvent event.ecommerce || null      
         var ecommerce_items = event.ecommerce.items || null;
+
+        console.log(eventName);
+        console.log(ecommerceEvent);
+        console.log(ecommerce_items);
         
         // Track standard events as relevant for Klaviyo assuming standard GA event formatting        
         if(ecommerceEvent){
