@@ -7,9 +7,9 @@
         
         var klaviyo = window.klaviyo || [];
         // Validate supported event type and formatting        
-        var eventName = event.event || null;
-        var ecommerceEvent = event.ecommerce || null;      
-        var ecommerce_items = event.ecommerce.items || null;
+        var eventName = event.event || '';
+        var ecommerceEvent = event.ecommerce || '';      
+        var ecommerce_items = event.ecommerce.items || '';
 
         console.log(eventName);
         console.log(ecommerceEvent);
