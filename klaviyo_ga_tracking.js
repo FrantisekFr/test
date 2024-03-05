@@ -27,7 +27,7 @@
         console.log(ecommerceItems);
 
         // Track select ecommerce events assuming standard GA4 ecommerce event formatting. 
-        if (ecommerceEvent && ecommerceItems) {
+        if (eventName && ecommerceItems) {
 
             if (eventName == "view_item") {
                 ecommerce_items[0].$value = ecommerce_items[0].price;
