@@ -35,7 +35,7 @@
             } else if (eventName == "add_to_cart") {
                 ecommerce_items[0].$value = ecommerce_items[0].price;
                 klaviyo.track(KLAVIYO_EVENT_KEY_MAP.eventName, ecommerce_items);
-            } else if (eventName == "begin_checkout" || eventName == "purchase")
+            } else if (eventName == "begin_checkout" || eventName == "purchase") {
                 var checkoutValue = 0;
                 var checkoutData = {};
 
@@ -49,7 +49,6 @@
             }
         }
     }
-
     // Attach an event listener to the push event of the dataLayer array
     window.dataLayer.push = function() {
         // Capture the arguments passed to the original push method
@@ -61,4 +60,5 @@
         // Handle the dataLayer push event
         handleDataLayerPush(event);
     };
+    
 })();
