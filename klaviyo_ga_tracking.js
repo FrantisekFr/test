@@ -20,7 +20,6 @@
         var isGAEvent = false;
         
         // Validate the main formatting expected for standard GA4 ecommerce events        
-
         try {
             eventName = event.event;
             ecommerceItems = event.ecommerce.items;
@@ -64,38 +63,25 @@
             }
         }
     }
-    // Attach an event listener to the push event of the dataLayer array
-    // window.dataLayer.push = function() {
-    //     // Capture the arguments passed to the original push method
-    //     var args = Array.prototype.slice.call(arguments);
-    //     // Call the original push method
-    //     Array.prototype.push.apply(window.dataLayer, args);
-    //     // Extract the event object from the arguments        
-    //     var event = args[0];
-    //     // Handle the dataLayer push event
-    //     handleDataLayerPush(event);
-    // };
-
-    // Override the push method of the dataLayer array
-window.dataLayer.push = function() {
-    // Capture the arguments passed to the original push method
-    var args = Array.prototype.slice.call(arguments);
-    // Call the original push method to ensure the dataLayer still functions as expected
-    Array.prototype.push.apply(window.dataLayer, args);
-    // Extract the event object from the arguments
-    var event;
-    console.log('pre handler ...');
-    console.log(args);
-    for (var i = 0; i < args.length; i++) {
-        if (typeof args[i] === 'object') {
-            event = args[i];
-            break;
+    
+    // Override the push method of the dataLayer array to listen for push events
+    window.dataLayer.push = function() {
+        // Capture the arguments passed to the original push method
+        var args = Array.prototype.slice.call(arguments);
+        // Call the original push method to ensure the dataLayer still functions as expected
+        Array.prototype.push.apply(window.dataLayer, args);
+        // Extract the event object from the arguments
+        var event;    
+        for (var i = 0; i < args.length; i++) {
+            if (typeof args[i] === 'object') {
+                event = args[i];
+                break;
+            }
         }
-    }
-    // Handle the dataLayer push event
-    if (event) {
-        handleDataLayerPush(event);
-    }
-};
+        // Handle the dataLayer push event
+        if (event) {
+            handleDataLayerPush(event);
+        }
+    };
     
 })();
