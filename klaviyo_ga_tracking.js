@@ -27,8 +27,7 @@
             isGA4Event = true; 
         } catch (err) {}
 
-        // Validate the main formatting expected for standard GA ecommerce events   
-        console.log(!isGA4Event);
+        // Validate the main formatting expected for standard GA ecommerce events           
         if(!isGA4Event) {
             try {
                 if(event[0] == "event"){
@@ -85,6 +84,8 @@ window.dataLayer.push = function() {
     Array.prototype.push.apply(window.dataLayer, args);
     // Extract the event object from the arguments
     var event;
+    console.log('pre handler ...');
+    console.log(args);
     for (var i = 0; i < args.length; i++) {
         if (typeof args[i] === 'object') {
             event = args[i];
