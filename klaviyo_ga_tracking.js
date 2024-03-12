@@ -31,6 +31,7 @@
             
             if (eventName == "view_item") {
                 ecommerceItems[0].$value = ecommerceItems[0].price;
+                console.log(eventName);
                 console.log('KL KEY EVENT MAP');
                 console.log(KLAVIYO_EVENT_KEY_MAP.eventName);
                 klaviyo.track(KLAVIYO_EVENT_KEY_MAP.eventName, ecommerceItems[0]);
