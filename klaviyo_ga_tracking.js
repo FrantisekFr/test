@@ -14,15 +14,30 @@
             "purchase": "Placed Order"
         }
 
-        // Validate the main formatting expected for standard GA4 ecommerce events
         var eventName;
         var ecommerceItems;
+        var isGA4Event = false;
+        var isGAEvent = false;
+        
+        // Validate the main formatting expected for standard GA4 ecommerce events        
 
         try {
             eventName = event.event;
             ecommerceItems = event.ecommerce.items;
+            isGA4Event = true; 
         } catch (err) {}
 
+        // Validate the main formatting expected for standard GA ecommerce events        
+        if(!isGA4Event) {
+            try {
+                if(event[0] == "event"){
+                    eventName = event[1];
+                    ecommerceItems = event[2].items;
+                    isGAEvent = true; 
+                }                
+            } catch (err) {}
+        }
+        
         console.log(eventName);
         console.log(ecommerceItems);
 
