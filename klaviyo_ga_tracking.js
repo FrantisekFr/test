@@ -27,7 +27,8 @@
             isGA4Event = true; 
         } catch (err) {}
 
-        // Validate the main formatting expected for standard GA ecommerce events        
+        // Validate the main formatting expected for standard GA ecommerce events   
+        console.log(!isGA4Event);
         if(!isGA4Event) {
             try {
                 if(event[0] == "event"){
