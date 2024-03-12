@@ -71,9 +71,7 @@
         var args = Array.prototype.slice.call(arguments);
         // Call the original push method
         Array.prototype.push.apply(window.dataLayer, args);
-        // Extract the event object from the arguments
-        console.log('pre handler ..');
-        console.log(args);
+        // Extract the event object from the arguments        
         var event = args[0];
         // Handle the dataLayer push event
         handleDataLayerPush(event);
