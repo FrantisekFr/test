@@ -34,7 +34,7 @@
                 klaviyo.track(KLAVIYO_EVENT_KEY_MAP[eventName], ecommerceItems[0]);
             } else if (eventName == "add_to_cart") {
                 ecommerceItems[0].$value = ecommerceItems[0].price;
-                klaviyo.track(KLAVIYO_EVENT_KEY_MAP[eventName], ecommerceItems);
+                klaviyo.track(KLAVIYO_EVENT_KEY_MAP[eventName], ecommerceItems[0]);
             } else if (eventName == "begin_checkout" || eventName == "purchase") {
                 var checkoutValue = 0;
                 var checkoutData = {};
