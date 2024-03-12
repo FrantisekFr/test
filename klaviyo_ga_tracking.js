@@ -3,7 +3,7 @@
 
     // Handle dataLayer events
     function handleDataLayerPush(event) {
-        console.log('dataLayer event detected by handler:', event);
+        // console.log('dataLayer event detected by handler:', event);
 
         var klaviyo = window.klaviyo || [];
 
@@ -37,8 +37,8 @@
             } catch (err) {}
         }
         
-        console.log(eventName);
-        console.log(ecommerceItems);
+        // console.log(eventName);
+        // console.log(ecommerceItems);
 
         // Track select ecommerce events assuming standard GA4 ecommerce event formatting. 
         if (eventName && ecommerceItems) {
@@ -46,9 +46,13 @@
             if (eventName == "view_item") {
                 ecommerceItems[0].$value = ecommerceItems[0].price;                
                 klaviyo.track(KLAVIYO_EVENT_KEY_MAP[eventName], ecommerceItems[0]);
+                console.log('tracked: ' + KLAVIYO_EVENT_KEY_MAP[eventName]);
+                console.log(ecommerceItems[0]);
             } else if (eventName == "add_to_cart") {
                 ecommerceItems[0].$value = ecommerceItems[0].price;
                 klaviyo.track(KLAVIYO_EVENT_KEY_MAP[eventName], ecommerceItems[0]);
+                console.log('tracked: ' + KLAVIYO_EVENT_KEY_MAP[eventName]);
+                console.log(ecommerceItems[0]);
             } else if (eventName == "begin_checkout" || eventName == "purchase") {
                 var checkoutValue = 0;
                 var checkoutData = {};
@@ -57,9 +61,11 @@
                     checkoutValue += ecommerceItems[i].price * ecommerceItems[i].quantity;
                 };
                 checkoutData.$value = parseFloat(checkoutValue.toFixed(2));
-                checkoutData.Items = ecommerce_items;
+                checkoutData.Items = ecommerceItems;
 
                 klaviyo.track(KLAVIYO_EVENT_KEY_MAP[eventName], checkoutData);
+                console.log('tracked: ' + KLAVIYO_EVENT_KEY_MAP[eventName]);
+                console.log(checkoutData);
             }
         }
     }
