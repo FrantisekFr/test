@@ -30,17 +30,17 @@
         if (eventName && ecommerceItems) {
 
             if (eventName == "view_item") {
-                ecommerce_items[0].$value = ecommerce_items[0].price;
-                klaviyo.track(KLAVIYO_EVENT_KEY_MAP.eventName, ecommerce_items[0]);
+                ecommerceItems[0].$value = ecommerceItems[0].price;
+                klaviyo.track(KLAVIYO_EVENT_KEY_MAP.eventName, ecommerceItems[0]);
             } else if (eventName == "add_to_cart") {
-                ecommerce_items[0].$value = ecommerce_items[0].price;
-                klaviyo.track(KLAVIYO_EVENT_KEY_MAP.eventName, ecommerce_items);
+                ecommerceItems[0].$value = ecommerceItems[0].price;
+                klaviyo.track(KLAVIYO_EVENT_KEY_MAP.eventName, ecommerceItems);
             } else if (eventName == "begin_checkout" || eventName == "purchase") {
                 var checkoutValue = 0;
                 var checkoutData = {};
 
-                for (var i = 0; i < ecommerce_items.length; i++) {
-                    checkoutValue += ecommerce_items[i].price * ecommerce_items[i].quantity;
+                for (var i = 0; i < ecommerceItems.length; i++) {
+                    checkoutValue += ecommerceItems[i].price * ecommerceItems[i].quantity;
                 };
                 checkoutData.$value = parseFloat(checkoutValue.toFixed(2));
                 checkoutData.Items = ecommerce_items;
