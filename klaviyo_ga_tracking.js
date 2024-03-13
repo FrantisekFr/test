@@ -31,7 +31,7 @@
             try {
                 if(event[0] == "event"){
                     eventName = event[1];
-                    ecommerceItems = event[2].items;
+                    ecommerceItems = event[2]['items'];
                     isGAEvent = true; 
                 }                
             } catch (err) {}
