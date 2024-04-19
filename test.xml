@@ -1,39 +1,31 @@
 <?xml version="1.0"?>
 <Products>
   <Product>
-    <id>KLAVIYO-TSHIRT_1</id>
-    <title>Classic Klaviyo T-Shirt 1</title>
-    <title_eng>Classic Klaviyo T-Shirt 1</title_eng>
-    <title_de>Ein Title (DE) - Classic Klaviyo T-Shirt 1</title_de>
-    <link>https://klaviyogear.myshopify.com/collections/klaviyo-classics/products/short-sleeve-t-shirt-1</link>
-    <description>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description>
-    <description_eng>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_eng>
-    <description_de>Eine Beschreibung (DE) - Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_de>
-    <price>10</price>
-    <price_gbp>10</price_gbp>
-    <price_eur>12</price_eur>
-    <compare_at_price>5</compare_at_price>
-    <image_link>https://www.klaviyo.com/media/images/examples/products/klaviyo-tshirt-thumbnail.png</image_link>
-    <categories>apparel,t-shirt,new-arrival,swag</categories>
-    <inventory_quantity>25</inventory_quantity>
-    <inventory_policy>1</inventory_policy>
-  </Product>
-  <Product>
-    <id>KLAVIYO-TSHIRT_2</id>
-    <title>Classic Klaviyo T-Shirt 2</title>
-    <title_eng>Classic Klaviyo T-Shirt 2</title_eng>
-    <title_de>Ein Title (DE) - Classic Klaviyo T-Shirt 2</title_de>
-    <link>https://klaviyogear.myshopify.com/collections/klaviyo-classics/products/short-sleeve-t-shirt-1</link>
-    <description>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description>
-    <description_eng>Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_eng>
-    <description_de>Eine Beschreibung (DE) - Standard issue for all Klaviyos. This t-shirt has the Klaviyo logo on the front and mark diagram on the back.</description_de>
-    <price>10</price>
-    <price_gbp>10</price_gbp>
-    <price_eur>12</price_eur>
-    <compare_at_price>10</compare_at_price>
-    <image_link>https://www.klaviyo.com/media/images/examples/products/klaviyo-tshirt-thumbnail.png</image_link>
-    <categories>apparel,t-shirt,new-arrival,swag</categories>
-    <inventory_quantity>1</inventory_quantity>
-    <inventory_policy>1</inventory_policy>
-  </Product>  
+<id>Test_1016456</id>
+<title>Rotes Quinoa</title>
+<link>https://staging.new-gebana.com/ch-de/Rotes-Quinoa/1016456</link>
+<description><p>Hoch oben in den bolivianischen Anden, auf 4000 Metern über dem Meer gibt es eine fruchtbare Hochebene. Dort kultivieren Bauernfamilien Quinoa. Der Geschmack der roten Körner erinnert an Nüsse, beim Kochen bleiben sie bissfest. Quinoa ist glutenfrei.</p></description>
+<price> 28</price>
+<long_product_name>Rotes Quinoa, 2 kg ||| bio, Bolivien</long_product_name>
+<containing_alcohol>True<containing_alcohol/>
+<weight>15</weight>
+<image_link>https://azswnst1mnk665.blob.core.windows.net/azswnsc1mnk667/media/87/f3/c9/1686592764/quinota_rot_webcut_1_.jpg?width=3000</image_link>
+<categories>Getreide</categories>
+<inventory_quantity>0</inventory_quantity>
+<inventory_policy>1</inventory_policy>
+</Product>
+<Product>
+<id>Test_1003812</id>
+<title>BULK-Rosinen 1kg</title>
+<link>https://staging.new-gebana.com/ch-de/BULK-Rosinen-1kg/1003812</link>
+<description>Needs to have a value - consider not using html markup<description/>
+<price> 89</price>
+<long_product_name>Rotes Quinoa, 2 kg ||| bio, Bolivien</long_product_name>
+<containing_alcohol><containing_alcohol/>
+<weight></weight>
+<image_link>n/a</image_link>
+<categories></categories>
+<inventory_quantity>8</inventory_quantity>
+<inventory_policy>1</inventory_policy>
+</Product>
 </Products>
