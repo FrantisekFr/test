@@ -1,26 +1,21 @@
-<items> 
-      <item>
-      <id><![CDATA[ACFECHU]]></id>
-      <item_group_id><![CDATA[ACFECHU]]></item_group_id>
-      <title><![CDATA[Lineman Chute]]></title>
-      <link><![CDATA[https://www.epsports.co.uk/lineman-chute.html]]></link>
-      <price>169.99</price>
-      <description><![CDATA[Lineman Chute (1272987) Varsity Model: Heavy-walled 1 5/8" powder coated steel tubing. Entrance height is fixed at 40" and exit height is fixed at 48" Assembled dimensions: 50"L x 50"W Includes hardware to link multiple chutes together]]></description>
-      <product_type><![CDATA[Field & Training Equipment > Training Equipment > Sleds & Chutes]]></product_type>
-      <google_product_category><![CDATA[]]></google_product_category>
-      <image_link><![CDATA[https://www.epsports.co.uk/pub/media/catalog/product/p/r/pro_down_lineman_chute.jpg]]></image_link>
-        <additional_image_link><![CDATA[https://www.epsports.co.uk/pub/media/catalog/product/p/r/pro_down_lineman_chute.jpg]]></additional_image_link>
-    </item>
-   <item>
-      <id><![CDATA[ACFEDCS]]></id>
-      <item_group_id><![CDATA[ACFEDCS]]></item_group_id>
-      <title><![CDATA[Dial A Down with Pro Chain Set]]></title>
-      <link><![CDATA[https://www.epsports.co.uk/dial-a-down-with-pro-chain-set.html]]></link>
-      <price>534.99</price>
-      <description><![CDATA[Dial A Down with Pro Chain Set 1370760 Dial-A-Down, the #1 digital down box. Pro chain set is 8' with padded bullseye Padded banners Exclusive chain swivel Moulded ground stops Rubber crutch tips Easy clip chain 2 piece black padded aircraft aluminum poles Please note only available in Black & Orange]]></description>
-      <product_type><![CDATA[Field & Training Equipment > Gameday Equipment > Field Equipment]]></product_type>
-      <google_product_category><![CDATA[]]></google_product_category>
-      <image_link><![CDATA[https://www.epsports.co.uk/pub/media/catalog/product/d/i/dial_a_down_set_1.jpeg]]></image_link>
-        <additional_image_link><![CDATA[https://www.epsports.co.uk/pub/media/catalog/product/d/i/dial_a_down_set_1.jpeg]]></additional_image_link>
-    </item>
-</items>
+<?xml version="1.0"?>
+<Products>
+  <Product>
+<id>Essity_123</id>
+<title>Light Leakproof No-Show Mesh High Rise</title>
+<link>https://knix.com/products/light-leakproof-no-show-mesh-high-rise</link>
+<description>Cool, sexy mesh Leakproof Underwear for when you’re feeling extra hot.</description>
+<price>26</price>
+<image_link>https://cdn.shopify.com/s/files/1/0660/0355/files/Knix_GM_LeakproofShadowMeshHighRise_Black_Front.jpg?v=1712585960&width=1600</image_link>
+<categories>Underwear,Essity,High Rise,Light</categories>
+</Product>
+<Product>
+<id>Essity_1234</id>
+<title>Leakproof Classic One Piece Swimsuit</title>
+<link>https://knix.com/products/leakproof-classic-one-piece-swimsuit</link>
+<description>The Knix take on a classic. High quality fabric, gorgeous fit and instant confidence.</description>
+<price>100</price>
+<image_link>https://cdn.shopify.com/s/files/1/0660/0355/files/Knix_LP_Classic_Scoop_Onepiece_Black.jpg?v=1707164115&width=1600</image_link>
+<categories>Swimwear,Essity,one-piece,Swimsuit</categories>
+</Product>
+</Products>
